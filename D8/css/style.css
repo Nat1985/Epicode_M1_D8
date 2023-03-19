@@ -51,7 +51,7 @@ body {
 
             .options {
                 height: 100%;
-                width: 530px;
+                width: 600px;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
@@ -119,6 +119,7 @@ body {
                 flex-wrap: nowrap;
                 align-items: flex-end;
                 padding-left: 10px;
+                margin-bottom: 20px;
             }
 
                 .tabs span {
@@ -147,10 +148,9 @@ body {
                 }
 
             .post {
-                background-color: antiquewhite;
                 height: 150px;
                 padding-left: 10px;
-                margin: 10px 0px;
+                margin: 20px 0px;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
@@ -163,55 +163,96 @@ body {
                 }
                 
                 .text {
-                    background-color: aquamarine;
                     height: 100%;
                     width: 100%;
+                    margin-right: 20px;
                 }
 
                     .who-where {
                         font-size: 9pt;
+                        margin-bottom: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
                     }
 
-                    .who-where :nth-child(3) {
+                    .who-where img, .who-where span {
+                        margin-right: 5px;
+                    }
+
+                    .who-where span:nth-of-type(2) {
                         color: #888888;
                     }
 
                     .who-where img {
-                        margin-right: 5px;
+                        width: 20px;
+                        height: 20px;
                     }
 
-                    .text .post-caption {
-                        background-color: orange;
+                    .text h3 {
+                        font-size: 16pt;
+                    }
+
+                    .text p {   
+                        max-height: 35px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                    }
+
+                    .post-caption {
                         display: flex;
                         flex-direction: row;
                         flex-wrap: nowrap;
                         justify-content: space-between;
                     }
-/* TO FIX */
-                        .post-info, .post-action {
-                            height: 10px;
-                            width: 10px;
-                            background-color: orangered;
+
+                    .post-info, .post-action {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    }
+                        .post-info {
+                            font-size: 10pt;
+                            color: #888888;
+                            justify-content: flex-start;
                         }
 
-                        .post-info {
-                            /* background-color: greenyellow; */
+                        .post-info span {
+                            min-width: fit-content;
+                        }
+
+                        .post-info span:nth-child(even) {
+                            width: 2px;
+                            height: 2px;
+                            margin: 0px 10px;
+                            background-color: #888888;
                         }
 
                         .post-action {
-                            /* background-color: goldenrod; */
+                            justify-content: flex-end;
+                            font-size: 12pt;
+                        }
+
+                        .post-action i {
+                            margin-left: 10px;
                         }
 
                 .image {
-                    background-color: rgb(223, 223, 78);
                     height: 100%;
-                    width: 300px;
+                    width: 200px;
+                    min-width: 200px;
                     align-items: center;
+                }
+
+                .image img {
+                    width: 100%;
                 }
 
         .side-section {
             background-color: white;
-            width: 530px;
+            width: 600px;
             padding-left: 50px;
         }
 
