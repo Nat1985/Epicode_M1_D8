@@ -51,7 +51,7 @@ body {
 
             .options {
                 height: 100%;
-                width: 600px;
+                width: 550px;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
@@ -190,15 +190,17 @@ body {
                     }
 
                     .text h3 {
-                        font-size: 16pt;
+                        font-size: 14pt;
                     }
 
                     .text p {   
-                        max-height: 35px;
+                        max-height: 40px;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         margin-top: 5px;
                         margin-bottom: 10px;
+                        font-size: 10pt;
+                        color: grey;
                     }
 
                     .post-caption {
@@ -214,8 +216,8 @@ body {
                         align-items: center;
                     }
                         .post-info {
-                            font-size: 10pt;
-                            color: #888888;
+                            font-size: 8pt;
+                            color: grey;
                             justify-content: flex-start;
                         }
 
@@ -230,6 +232,12 @@ body {
                             background-color: #888888;
                         }
 
+                        .post-info span:nth-child(5) {
+                            background-color: #eeeeee;
+                            padding: 5px 7px;
+                            border-radius: 10px;
+                        }
+
                         .post-action {
                             justify-content: flex-end;
                             font-size: 12pt;
@@ -241,8 +249,8 @@ body {
 
                 .image {
                     height: 100%;
-                    width: 200px;
-                    min-width: 200px;
+                    width: 180px;
+                    min-width: 180px;
                     align-items: center;
                 }
 
@@ -252,7 +260,7 @@ body {
 
         .side-section {
             background-color: white;
-            width: 600px;
+            width: 550px;
             padding-left: 50px;
         }
 
