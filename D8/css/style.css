@@ -16,13 +16,15 @@ body {
 }
 
     header {
+        background-color: white;
         height: 55px;
         width: 100%;
         box-shadow: 0px 3px 15px 2px rgba(0, 0, 0, 0.1);
-        z-index: 3;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        position: fixed;
+        z-index: 3;
     }
 
         .title {
@@ -96,6 +98,7 @@ body {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
+        z-index: 2;
     }
 
         .main-section {
@@ -104,10 +107,11 @@ body {
             padding-right: 50px;
             display: flex;
             flex-direction: column;
-            
+            margin-top: 55px;
         }
 
             .tabs {
+                background-color: white;
                 height: 80px;
                 display: flex;
                 flex-direction: row;
@@ -139,7 +143,7 @@ body {
                 }
 
                 .tabs span:nth-child(3) {
-                    width: 100%;
+                    width: 380px;
                 }
 
             .post {
@@ -256,12 +260,12 @@ body {
         .side-section {
             width: 550px;
             padding-left: 30px;
+            margin-top: 55px;
         }
 
             .side-section > div {
                 width: 100%;
                 margin: 10px 0px;
-                /* padding: 10px; */
             }
 
             .twitter {
